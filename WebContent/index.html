@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>calculadora</title>
+
+<style media="screen">
+body {
+	margin: 0;
+}
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+</style>
+</head>
+<body>
+	<script>
+
+function sumar(uno,dos)
+{
+var total;
+total = parseInt(uno.value)+parseInt(dos.value);
+alert("La suma es: " + total);
+}
+
+function resta(uno,dos)
+{
+var total;
+total = parseInt(uno.value)-parseInt(dos.value);
+alert("La resta es: " + total);
+}
+
+function mul(uno,dos)
+{
+var total;
+total = parseInt(uno.value)*parseInt(dos.value);
+alert("La multiplicacion es: " + total);
+}
+
+function div(uno,dos)
+{
+var total;
+total = parseInt(uno.value)/parseInt(dos.value);
+alert("La division es " + total);
+}
+
+
+
+</script>
+
+	<img src="fondo.jpg" alt="">
+
+	<center>
+		<h1>calculadora</h1>
+		<from action="AgregaServlet" method="post">
+		<center>
+			<table align="center">
+
+				<tr>
+				<center>
+			
+					<form name="suma">
+						<input type="text" name="uno" size="5"> 
+						<input type="text" name="dos" size="5"> <input type="button"
+							name="Ver total" value="sumar  " onclick="sumar(uno,dos)">
+					</form>
+					
+					<form name="Resta">
+						<input type="text" name="uno" size="5">
+						<input type="text" name="dos" size="5"> <input type="button"
+							name="Ver total" value="resta    " onclick="resta(uno,dos)">
+					</form>
+					
+						<form name="division">
+						<input type="text" name="uno" size="5">
+						<input type="text" name="dos" size="5"> <input type="button"
+							name="Ver total" value="divicion" onclick="div(uno,dos)">
+					</form>
+					
+					<form name="mulipli">
+						<input type="text" name="uno" size="5">
+						<input type="text" name="dos" size="5"> <input type="button"
+							name="Ver total" value="multiplicacion" onclick="mul(uno,dos)">
+					</form>
+					
+						</center>			
+				</tr>
+			</table>
+		</center>
+		</from>
+	</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
